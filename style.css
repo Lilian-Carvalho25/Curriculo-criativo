@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Raleway:wght@700;800&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+header {
+    background-color: #2A2B2A;
+    text-align: center;
+    padding-bottom: 7vh;
+}
+
+#minha-ft {
+    margin-top: 3rem;
+    width: 200px;
+}
+
+header img, h1 {
+    margin: 0.5rem;
+}
+
+header h1 {
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+}
+
+header h1 {
+    color: white;
+    font-family: "raleway", 'Courier New', Courier, monospace;
+    font-size: clamp(2rem,2.8vw,3.6rem);
+}
+
+p {
+    font-size: clamp(1rem,1.2vw,2rem);
+}
+
+h2 {
+    font-size: clamp(1.7rem,1.7vw,3.1rem);
+}
+
+h4 {
+    font-size: clamp(1rem,1.4vw,3.6rem);
+}
+
+#container-esquerda {
+    width: 50%;
+    background-image: url(imagens/download\ \(1\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+
+    text-align: center;
+}
+
+#container-contato, #container-habilidades, #container-ocupacao {
+    line-height: 2.5rem;
+}
+
+#container-esquerda h2 {
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    color: black;
+    border: black solid 4px;
+    width: 46vw;
+    max-width: 500px;
+    border-radius: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container-direita {
+    width: 50%;
+}
+
+#container-direita h2, figure {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.container-lado-a-lado {
+    display: flex;
+    align-items: center;
+}
+
+#container-esquerda img {
+    width: 40px;
+}
+
+#container-ocupacao img { width: 80px;}
+
+.tamanho-icones {
+    width: 60px;
+}
+   
+#estudante {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#html, #css, #trabalho, #flexibilidade {
+   padding: 20px;
+}
+
+#finalizacao {font-size: clamp(1.1rem,1.4vw,1.7rem);
+    font-weight: bolder;
+}
+
+.limitador {
+   padding-left: 5px;
+}
+
+#limitador-lista {
+    padding-right: 30px;
+    line-height: 1.6rem;
+}
+
+li {
+    font-family: "Noto sans", 'Courier New', Courier, monospace;
+    font-size: 14px;
+    list-style: none;
+}
+
+h4 { color: #F3BD1C;}
+
+.limitador-paragrafos {
+    padding-left: 30px;
+    padding-bottom: 6px;
+}
+
+meter {
+    width: 80%;
+    height: 50px;
+}
+
+meter::webkit-meter-bar{
+    background: whitesmoke;
+}
+
+div:nth-of-type(1) > meter::-webkit-meter-optimum-value{
+    background: #2a2b2ade;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-600);
+        scale: 1.4;
+    }
+        to {
+            opacity: 1;
+            transform: translateY(0)
+            scale(1)
+        }
+}
+
+@media screen and (min-width:900px) {
+    header #minha-ft {
+        width: 270px;
+    }
+
+    header a img {
+        width: 46px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .limitador:not(#cursos) {
+        padding-left: 20px;
+    }
+
+    meter {
+        max-width: 74%;
+    }
+
+    header a img {
+        width: 40px;
+    }
+}
+
+
+
+
+
+
