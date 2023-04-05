@@ -200,6 +200,16 @@ div:nth-of-type(1) > meter::-webkit-meter-optimum-value{
     }
 }
 
+@media screen and (max-width:409px) {
+    #container-esquerda img {
+        width: 34px;
+    } 
+
+    #container-contato p {
+        font-size: 11px;
+    }
+}
+
 
 
 
